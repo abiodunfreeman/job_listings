@@ -3,7 +3,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #5ba4a4;
-  min-height: 15vh;
+  min-height: 12vh;
 }
 
 @media (max-width: 450px) {
