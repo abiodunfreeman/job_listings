@@ -18,8 +18,8 @@ function App() {
     <div className="App">
       <Header/>
       <section className="card-list-container">
-       {cardsJSXArray[0]}
-       {cardsJSXArray[3]}
+       {cardsJSXArray}
+       {/* {cardsJSXArray[3]} */}
       </section>
       
     </div>

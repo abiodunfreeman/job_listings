@@ -9,7 +9,7 @@ export default function Card( props ) {
     return (
     <div className="card--container">
         <div className="card--left">
-            <img src={data.logo} alt="company logo"/>
+            <img src={logo} alt="company logo"/>
             <div className='card--text'>
                 <div className='card--name'>
                     <h4>{company}</h4>
@@ -17,6 +17,11 @@ export default function Card( props ) {
                     {featured && featuredLogo}
                 </div>
                 <h3>{position}</h3>
+                <ul className="job--details">
+                    <li>{postedAt}</li>
+                    <li>{contract}</li>
+                    <li>{location}</li>
+                </ul>
             </div>
         </div>
         

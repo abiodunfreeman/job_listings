@@ -1,16 +1,17 @@
 .card--container {
-    border: 3px solid black;
+    // border: 3px solid black;
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: white;
-    box-shadow: 0 0 5px 5px rgba(0,0,0,.3);
-    padding: 5px;
+    box-shadow: 0 0 5px 5px rgba(0,0,0,.1);
+    padding: 15px;
     gap: 5px;
     .card--text{
-        border: 3px solid green;
+        // border: 3px solid green;
         margin: 5px;
         display: flex;
         flex-direction: column;
+        gap: .5rem;
         h3{
             transition-duration: 200ms;
         }
@@ -18,17 +19,27 @@
             color: hsl(180, 29%, 50%);
             cursor: pointer;
         }
+        ul{
+            display: flex;
+            gap: 1.5rem;
+            color:hsl(180, 8%, 52%);
+            li:first-child{
+                list-style: none;
+            }
+        }
+        
     }
     .card--left{
-        border: 3px solid blue;
+        // border: 3px solid blue;
         display: flex;
+        gap: 1rem;
     }
     .card--right{
         display: flex;
         align-items: center;
         justify-content: end;
         gap: 1rem;
-        border: 3px solid red;
+        // border: 3px solid red;
         padding-right: 1.5rem;
      li{
         //  display: flex;
@@ -53,7 +64,7 @@
 .card--name{
     display: flex;
     gap: 1rem;
-    border: 2px solid orangered;
+    // border: 2px solid orangered;
     h4{
         color: hsl(180, 29%, 50%);
     }
@@ -65,11 +76,11 @@
     background-color: hsl(180, 29%, 50%);
     color: white;
     border-radius: 30px;
-    padding: 1px 5px;
+    padding: 5px 8px;
 }
 .featured--logo{
     background-color: black;
     color: white;
     border-radius: 30px;
-    padding: 1px 5px;
+    padding: 5px 8px;
 }
