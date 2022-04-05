@@ -28,11 +28,7 @@ function App() {
       setFilterOptions(prevOptions => new Set([...prevOptions, ele])) // gets rids of duplicates, adds clicked element
     }
   
-  //  if(/* code */){
-  //    //do this
-  //  }
-  //   // console.log(cardsList[0].props)
-
+  
    }
   useEffect(() => {
     console.log(filterOptions)
