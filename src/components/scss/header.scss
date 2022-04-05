@@ -1,0 +1,12 @@
+header{
+    background-image: url(../../../public/images/bg-header-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: hsl(180, 29%, 50%);
+    min-height: 15vh;
+}
+@media(max-width:450px){
+    header{
+        background-image: url(../../../public/images/bg-header-mobile.svg);
+    }
+}
