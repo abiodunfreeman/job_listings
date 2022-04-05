@@ -24,7 +24,7 @@ function App() {
   const [filterOptions, setFilterOptions] = useState([])
   function handleFilter(ele){
     
-    if (filterOptions.includes(ele) === false){
+    if (filterOptions.includes(ele) === false){ // pretty sure i can remove the if statement
       setFilterOptions(prevOptions => new Set([...prevOptions, ele])) // gets rids of duplicates, adds clicked element
     }
   

@@ -1,14 +1,20 @@
+
+
 .card--container {
     // border: 3px solid black;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
     background-color: white;
     box-shadow: 0 0 5px 5px rgba(0,0,0,.1);
     padding: 30px;
     gap: 5px;
+    border-left:hsl(180, 29%, 50%) 4px solid;
+    border-radius: 5px;
     .card--text{
-        // border: 3px solid green;
-        margin: 5px;
+        border: 3px solid green;
+        // padding: .5rem;
+        // margin: 5px;
         display: flex;
         flex-direction: column;
         gap: .5rem;
@@ -30,16 +36,22 @@
         
     }
     .card--left{
-        // border: 3px solid blue;
+        border: 3px solid blue;
         display: flex;
         gap: 1rem;
+        img{
+            height: 100px;
+            width: 100px;
+        }
     }
     .card--right{
+        justify-self: end;
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
         justify-content: end;
         gap: 1rem;
-        // border: 3px solid red;
+        border: 3px solid red;
         padding-right: 1.5rem;
      li{
         //  display: flex;
@@ -64,7 +76,7 @@
 .card--name{
     display: flex;
     gap: 1rem;
-    // border: 2px solid orangered;
+    border: 2px solid orangered;
     h4{
         color: hsl(180, 29%, 50%);
     }
@@ -83,4 +95,20 @@
     color: white;
     border-radius: 30px;
     padding: 5px 8px;
+}
+@media(max-width:900px){
+    .card--container{
+        flex-direction: column;
+      
+      .card--left{
+        position: relative;
+          img {
+              top: -65px;
+              left: -20px;
+              position: absolute;
+              height: 60px;
+              width: 60px;
+          }
+      }
+    }
 }

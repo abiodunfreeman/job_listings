@@ -10,7 +10,7 @@ html {
 }
 
 .App {
-  max-width: 100vw;
+  max-width: 100%;
   min-height: 100vh;
   border: 3px solid black;
   background-color: #effafa;
@@ -22,9 +22,19 @@ html {
   padding: 1rem;
   justify-self: center;
   align-self: center;
-  width: 80vw;
   border: 3px solid rebeccapurple;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   gap: 1.5rem;
+}
+
+@media (max-width: 900px) {
+  html {
+    font-size: 12px;
+  }
+  p {
+    font-size: 10px;
+  }
 }
