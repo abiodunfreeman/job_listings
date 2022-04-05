@@ -1,11 +1,15 @@
 import React from 'react'
 import "./css/card.css"
 export default function Card( props ) {
-    const {data} = props
+    const {data, handleFilter, filterList} = props
+    // console.log(props)
     const {company, contract, featured, id, languages, level, location, logo, position, postedAt, role, tools} = data
-    const languagesList = languages.map(element => <li key={element}>{element}</li>) // takes all languages and puts them individually in li elements
+    
     const newLogo = <div className='new--logo'><p>NEW!</p></div>
     const featuredLogo = <div className='featured--logo'><p>FEATURED</p></div>
+    // const filterList = [role,level,...tools, ...languages]
+    const filterListJSX = filterList.map(element => <li onClick={()=> handleFilter(element)} key={element}>{element}</li>) // takes all options and puts them individually in li elements
+    
     return (
     <div className="card--container">
         <div className="card--left">
@@ -26,9 +30,7 @@ export default function Card( props ) {
         </div>
         
            <ul className="card--right">
-               <li>{role}</li>
-               <li>{level}</li>
-            {languagesList} 
+               {filterListJSX}
            </ul>
         
     </div>
