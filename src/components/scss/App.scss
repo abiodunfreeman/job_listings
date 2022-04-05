@@ -2,10 +2,27 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    
+}
+html {
+    font-size: 15px;
 }
 .App{
     max-width: 100vw;
     min-height: 100vh;
     border: 3px solid black;
     background-color: hsl(180, 52%, 96%);
+    display: flex;
+    flex-direction: column;
+    
+    .card-list-container{
+        padding: 1rem;
+        justify-self: center;
+        align-self: center;
+        width: 80vw;
+        border: 3px solid rebeccapurple;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
 }

@@ -1,0 +1,62 @@
+.card--container {
+  border: 3px solid black;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #eef6f6;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.3);
+  padding: 5px;
+  gap: 5px;
+}
+
+.card--container .card--text {
+  border: 3px solid green;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card--container .card--left {
+  border: 3px solid blue;
+  display: flex;
+}
+
+.card--container .card--right {
+  display: flex;
+  align-items: center;
+  border: 3px solid red;
+}
+
+.card--container .card--right .card--languages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  gap: 1rem;
+}
+
+.card--name {
+  display: flex;
+  gap: 1rem;
+  border: 2px solid orangered;
+}
+
+.card--name h3 {
+  color: #5ba4a4;
+}
+
+.new--logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #5ba4a4;
+  color: white;
+  border-radius: 30px;
+  padding: 1px 5px;
+}
+
+.featured--logo {
+  background-color: black;
+  color: white;
+  border-radius: 30px;
+  padding: 1px 5px;
+}
