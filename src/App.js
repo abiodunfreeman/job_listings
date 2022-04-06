@@ -37,7 +37,7 @@ function App() {
     <div className="App">
       <Header/>
       <section className="card-list-container">
-       {cardsList[0]}
+       {cardsList}
       </section>
       
     </div>

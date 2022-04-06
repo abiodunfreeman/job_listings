@@ -1,52 +1,42 @@
 .card--container {
-  max-width: 100%;
+  width: 60vw;
   display: flex;
   justify-content: space-between;
   background-color: white;
   box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1);
   padding: 30px;
-  gap: 5px;
-  border-left: #5ba4a4 4px solid;
+  gap: 1rem;
+  border-left: hsl(180deg, 29%, 50%) 4px solid;
   border-radius: 5px;
 }
-
 .card--container .card--text {
-  border: 3px solid green;
   display: flex;
   flex-direction: column;
-  gap: .5rem;
+  gap: 0.5rem;
 }
-
 .card--container .card--text h3 {
   transition-duration: 200ms;
 }
-
 .card--container .card--text h3:hover {
-  color: #5ba4a4;
+  color: hsl(180deg, 29%, 50%);
   cursor: pointer;
 }
-
 .card--container .card--text ul {
   display: flex;
   gap: 1.5rem;
-  color: #7b8e8e;
+  color: hsl(180deg, 8%, 52%);
 }
-
 .card--container .card--text ul li:first-child {
   list-style: none;
 }
-
 .card--container .card--left {
-  border: 3px solid blue;
   display: flex;
   gap: 1rem;
 }
-
 .card--container .card--left img {
   height: 100px;
   width: 100px;
 }
-
 .card--container .card--right {
   justify-self: end;
   display: flex;
@@ -54,22 +44,19 @@
   align-items: center;
   justify-content: end;
   gap: 1rem;
-  border: 3px solid red;
   padding-right: 1.5rem;
 }
-
 .card--container .card--right li {
   padding: 5px 7px;
   font-weight: 700;
-  background-color: #eef6f6;
+  background-color: hsl(180deg, 31%, 95%);
   list-style: none;
-  color: #5ba4a4;
+  color: hsl(180deg, 29%, 50%);
   transition-duration: 250ms;
   border-radius: 5px;
 }
-
 .card--container .card--right li:hover {
-  background-color: #5ba4a4;
+  background-color: hsl(180deg, 29%, 50%);
   color: white;
   cursor: pointer;
 }
@@ -77,18 +64,17 @@
 .card--name {
   display: flex;
   gap: 1rem;
-  border: 2px solid orangered;
+  align-items: center;
 }
-
 .card--name h4 {
-  color: #5ba4a4;
+  color: hsl(180deg, 29%, 50%);
 }
 
 .new--logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #5ba4a4;
+  background-color: hsl(180deg, 29%, 50%);
   color: white;
   border-radius: 30px;
   padding: 5px 8px;
@@ -101,11 +87,14 @@
   padding: 5px 8px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 950px) {
   .card--container {
     flex-direction: column;
+    max-width: 400px;
   }
   .card--container .card--left {
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid hsl(180deg, 8%, 52%);
     position: relative;
   }
   .card--container .card--left img {
@@ -116,3 +105,5 @@
     width: 60px;
   }
 }
+
+/*# sourceMappingURL=card.css.map */

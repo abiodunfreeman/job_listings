@@ -1,13 +1,14 @@
-@media (max-width: 900px) {
+@media (max-width: 950px) {
   header {
     background-image: url(../../../public/images/bg-header-mobile.svg);
   }
 }
-
 header {
   background-image: url(../../../public/images/bg-header-desktop.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #5ba4a4;
-  min-height: 12vh;
+  background-color: hsl(180deg, 29%, 50%);
+  min-height: 15vh;
 }
+
+/*# sourceMappingURL=header.css.map */

@@ -26,19 +26,20 @@ html {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: 1.5rem;
+        gap: 2.5rem;
     }
 }
-@media (max-width: 900px){
+@media (max-width: 950px){
     html{
-        font-size: 12px;
+        font-size: 14px;
     }
     p{
         font-size: 10px;
     }
     .App{
+        
         .card-list-container{
-
+            gap: 5rem;
         }
     }
 }

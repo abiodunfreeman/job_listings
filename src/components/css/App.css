@@ -2,7 +2,7 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  font-family: 'Spartan', sans-serif;
+  font-family: "Spartan", sans-serif;
 }
 
 html {
@@ -13,11 +13,10 @@ html {
   max-width: 100%;
   min-height: 100vh;
   border: 3px solid black;
-  background-color: #effafa;
+  background-color: hsl(180deg, 52%, 96%);
   display: flex;
   flex-direction: column;
 }
-
 .App .card-list-container {
   padding: 1rem;
   justify-self: center;
@@ -27,14 +26,21 @@ html {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 1.5rem;
+  gap: 2.5rem;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 950px) {
   html {
-    font-size: 12px;
+    font-size: 14px;
   }
+
   p {
     font-size: 10px;
   }
+
+  .App .card-list-container {
+    gap: 5rem;
+  }
 }
+
+/*# sourceMappingURL=App.css.map */
