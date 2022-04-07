@@ -1,13 +1,16 @@
 @media (max-width: 950px) {
+  /* line 2, ../github/job_listings/src/components/scss/header.scss */
   header {
     background-image: url(../../../public/images/bg-header-mobile.svg);
   }
 }
+
+/* line 6, ../github/job_listings/src/components/scss/header.scss */
 header {
   background-image: url(../../../public/images/bg-header-desktop.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: hsl(180deg, 29%, 50%);
+  background-color: #5ba4a4;
   min-height: 15vh;
 }
 

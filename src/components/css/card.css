@@ -1,3 +1,4 @@
+/* line 3, ../github/job_listings/src/components/scss/card.scss */
 .card--container {
   width: 60vw;
   display: flex;
@@ -6,37 +7,53 @@
   box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1);
   padding: 30px;
   gap: 1rem;
-  border-left: hsl(180deg, 29%, 50%) 4px solid;
+  border-left: #5ba4a4 4px solid;
   border-radius: 5px;
 }
+
+/* line 15, ../github/job_listings/src/components/scss/card.scss */
 .card--container .card--text {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: .5rem;
 }
+
+/* line 22, ../github/job_listings/src/components/scss/card.scss */
 .card--container .card--text h3 {
   transition-duration: 200ms;
 }
+
+/* line 25, ../github/job_listings/src/components/scss/card.scss */
 .card--container .card--text h3:hover {
-  color: hsl(180deg, 29%, 50%);
+  color: #5ba4a4;
   cursor: pointer;
 }
+
+/* line 29, ../github/job_listings/src/components/scss/card.scss */
 .card--container .card--text ul {
   display: flex;
   gap: 1.5rem;
-  color: hsl(180deg, 8%, 52%);
+  color: #7b8e8e;
 }
+
+/* line 33, ../github/job_listings/src/components/scss/card.scss */
 .card--container .card--text ul li:first-child {
   list-style: none;
 }
+
+/* line 39, ../github/job_listings/src/components/scss/card.scss */
 .card--container .card--left {
   display: flex;
   gap: 1rem;
 }
+
+/* line 43, ../github/job_listings/src/components/scss/card.scss */
 .card--container .card--left img {
   height: 100px;
   width: 100px;
 }
+
+/* line 48, ../github/job_listings/src/components/scss/card.scss */
 .card--container .card--right {
   justify-self: end;
   display: flex;
@@ -46,40 +63,49 @@
   gap: 1rem;
   padding-right: 1.5rem;
 }
+
+/* line 57, ../github/job_listings/src/components/scss/card.scss */
 .card--container .card--right li {
   padding: 5px 7px;
   font-weight: 700;
-  background-color: hsl(180deg, 31%, 95%);
+  background-color: #eef6f6;
   list-style: none;
-  color: hsl(180deg, 29%, 50%);
+  color: #5ba4a4;
   transition-duration: 250ms;
   border-radius: 5px;
 }
+
+/* line 70, ../github/job_listings/src/components/scss/card.scss */
 .card--container .card--right li:hover {
-  background-color: hsl(180deg, 29%, 50%);
+  background-color: #5ba4a4;
   color: white;
   cursor: pointer;
 }
 
+/* line 77, ../github/job_listings/src/components/scss/card.scss */
 .card--name {
   display: flex;
   gap: 1rem;
   align-items: center;
 }
+
+/* line 82, ../github/job_listings/src/components/scss/card.scss */
 .card--name h4 {
-  color: hsl(180deg, 29%, 50%);
+  color: #5ba4a4;
 }
 
+/* line 86, ../github/job_listings/src/components/scss/card.scss */
 .new--logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: hsl(180deg, 29%, 50%);
+  background-color: #5ba4a4;
   color: white;
   border-radius: 30px;
   padding: 5px 8px;
 }
 
+/* line 95, ../github/job_listings/src/components/scss/card.scss */
 .featured--logo {
   background-color: black;
   color: white;
@@ -88,15 +114,19 @@
 }
 
 @media (max-width: 950px) {
+  /* line 102, ../github/job_listings/src/components/scss/card.scss */
   .card--container {
     flex-direction: column;
     max-width: 400px;
+    min-width: 270px;
   }
+  /* line 106, ../github/job_listings/src/components/scss/card.scss */
   .card--container .card--left {
-    padding-bottom: 0.5rem;
-    border-bottom: 1px solid hsl(180deg, 8%, 52%);
+    padding-bottom: .5rem;
+    border-bottom: 1px solid #7b8e8e;
     position: relative;
   }
+  /* line 110, ../github/job_listings/src/components/scss/card.scss */
   .card--container .card--left img {
     top: -65px;
     left: -20px;

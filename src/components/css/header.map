@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "header.css",
+	"sources": [
+		"../scss/header.scss"
+	],
+	"sourcesContent": [
+		"@media(max-width:950px){\r\n    header{\r\n        background-image: url(../../../public/images/bg-header-mobile.svg);\r\n    }\r\n}\r\nheader{\r\n    background-image: url(../../../public/images/bg-header-desktop.svg);\r\n    background-repeat: no-repeat;\r\n    background-size: cover;\r\n    background-color: hsl(180, 29%, 50%);\r\n    min-height: 15vh;\r\n    \r\n}\r\n"
+	],
+	"names": [],
+	"mappings": "AAAA,MAAM,EAAC,SAAS,EAAE,KAAK;;EACnB,AAAA,MAAM,CAAA;IACF,gBAAgB,EAAE,gDAAgD;GACrE;;;;AAEL,AAAA,MAAM,CAAA;EACF,gBAAgB,EAAE,iDAAiD;EACnE,iBAAiB,EAAE,SAAS;EAC5B,eAAe,EAAE,KAAK;EACtB,gBAAgB,EAAE,OAAkB;EACpC,UAAU,EAAE,IAAI;CAEnB"
+}

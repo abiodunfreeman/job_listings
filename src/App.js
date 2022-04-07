@@ -7,8 +7,9 @@ import { useEffect, useState } from 'react';
 
 function App() {
  
-  
-  const cardsJSXArray = data.map(listing => {
+  const [filterOptions, setFilterOptions] = useState([])
+
+  const cardsJSXArray = data.map(listing => { // creates <Card/> elements, passing down info from each data obj
     const filterList = [listing.role, listing.level, ...listing.tools, ...listing.languages] // //takes all filter options from data and puts into one array 
 
     return (
@@ -21,16 +22,29 @@ function App() {
     )
   })
   const [cardsList , setCardsList] = useState(cardsJSXArray)
-  const [filterOptions, setFilterOptions] = useState([])
-  function handleFilter(ele){
+ 
+  function handleFilter(ele, props){ //function that's passed down to <Cards/>
+    console.log(props)
+
+      setFilterOptions(prevOptions => [...new Set([...prevOptions, ele])]) // gets rids of duplicates, adds clicked element
     
-    if (filterOptions.includes(ele) === false){ // pretty sure i can remove the if statement
-      setFilterOptions(prevOptions => new Set([...prevOptions, ele])) // gets rids of duplicates, adds clicked element
-    }
-  
-  
    }
-  useEffect(() => {
+   useEffect(() => { // runs everytime filterOptions is updated
+    if (filterOptions.length === 0){
+      return;
+    } else if (filterOptions.length > 0){
+      setCardsList(prevCardList => {
+        console.log(prevCardList[0].props.filterList)
+        const newCardList = prevCardList.filter(card => {
+          if (filterOptions.every(option => card.props.filterList.includes(option))) {
+            return card;
+          }
+        })
+        console.log(newCardList)
+        return newCardList;
+      });
+    }
+
     console.log(filterOptions)
   }, [filterOptions])
   return (
@@ -38,6 +52,7 @@ function App() {
       <Header/>
       <section className="card-list-container">
        {cardsList}
+     
       </section>
       
     </div>

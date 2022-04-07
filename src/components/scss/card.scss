@@ -2,6 +2,7 @@
 
 .card--container {
     // border: 3px solid black;
+    
     width: 60vw;
     display: flex;
     justify-content: space-between;
@@ -101,7 +102,7 @@
     .card--container{
         flex-direction: column;
         max-width: 400px;
-        
+        min-width: 270px;
       .card--left{
         padding-bottom: .5rem;  
         border-bottom: 1px solid hsl(180, 8%, 52%);

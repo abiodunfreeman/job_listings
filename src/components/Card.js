@@ -2,16 +2,18 @@ import React from 'react'
 import "./css/card.css"
 export default function Card( props ) {
     const {data, handleFilter, filterList} = props
-    // console.log(props)
+    
     const {company, contract, featured, id, languages, level, location, logo, position, postedAt, role, tools} = data
     
     const newLogo = <div className='new--logo'><p>NEW!</p></div>
     const featuredLogo = <div className='featured--logo'><p>FEATURED</p></div>
     // const filterList = [role,level,...tools, ...languages]
-    const filterListJSX = filterList.map(element => <li onClick={()=> handleFilter(element)} key={element}>{element}</li>) // takes all options and puts them individually in li elements
-    
+    const filterListJSX = filterList.map(element => <li onClick={()=> handleFilter(element, props)} key={element}>{element}</li>) // takes all options and puts them individually in li elements
+    const styles = {
+        // display: "none",
+    }
     return (
-    <div className="card--container">
+    <div style={styles} className="card--container">
         <div className="card--left">
             <img src={logo} alt="company logo"/>
             <div className='card--text'>
