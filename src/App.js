@@ -32,6 +32,7 @@ function App() {
    }
    useEffect(() => { // runs everytime filterOptions is updated && on first render
     if (filterOptions.length === 0){ // checks if filterOptions is empty (mainly for first render)
+      setCardsList(cardsJSXArray)
       return;
     } else if (filterOptions.length > 0){
       setCardsList(prevCardList => {
@@ -47,10 +48,14 @@ function App() {
 
     console.log(filterOptions)
   }, [filterOptions])
+
+  function handleClear(){
+    setFilterOptions([])
+  }
   return (
     <div className="App">
       <Header/>
-      <Filterlist list ={filterOptions}/>
+      <Filterlist handleClear={handleClear} list ={filterOptions}/>
       <section className="card-list-container">
        {cardsList}
      
