@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "filterlist.css",
+	"sources": [
+		"../scss/filterlist.scss"
+	],
+	"sourcesContent": [
+		"#filter-list{\r\n  background-color: blueviolet;\r\n}"
+	],
+	"names": [],
+	"mappings": ";AAAA,AAAA,YAAY,CAAA;EACV,gBAAgB,EAAE,UAAU;CAC7B"
+}

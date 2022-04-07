@@ -3,6 +3,7 @@ import './components/css/App.css';
 import Header from './components/Header';
 import data from "./components/data"
 import Card from './components/Card';
+import Filterlist from './components/Filterlist';
 import { useEffect, useState } from 'react';
 
 function App() {
@@ -29,19 +30,18 @@ function App() {
       setFilterOptions(prevOptions => [...new Set([...prevOptions, ele])]) // gets rids of duplicates, adds clicked element
     
    }
-   useEffect(() => { // runs everytime filterOptions is updated
-    if (filterOptions.length === 0){
+   useEffect(() => { // runs everytime filterOptions is updated && on first render
+    if (filterOptions.length === 0){ // checks if filterOptions is empty (mainly for first render)
       return;
     } else if (filterOptions.length > 0){
       setCardsList(prevCardList => {
-        console.log(prevCardList[0].props.filterList)
         const newCardList = prevCardList.filter(card => {
           if (filterOptions.every(option => card.props.filterList.includes(option))) {
+            // if the Card.props.filterList includes every option in filterOptions, returns the card
             return card;
           }
         })
-        console.log(newCardList)
-        return newCardList;
+        return newCardList; // sets cardList as newCardList
       });
     }
 
@@ -50,6 +50,7 @@ function App() {
   return (
     <div className="App">
       <Header/>
+      <Filterlist list ={filterOptions}/>
       <section className="card-list-container">
        {cardsList}
      
