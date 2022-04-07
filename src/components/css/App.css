@@ -45,6 +45,7 @@ html {
   }
   /* line 41, ../github/job_listings/src/components/scss/App.scss */
   .App .card-list-container {
+    margin-top: 2rem;
     gap: 5rem;
   }
 }

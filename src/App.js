@@ -55,7 +55,7 @@ function App() {
   return (
     <div className="App">
       <Header/>
-      <Filterlist handleClear={handleClear} list ={filterOptions}/>
+      {filterOptions.length > 0 && <Filterlist handleClear={handleClear} list ={filterOptions}/>}
       <section className="card-list-container">
        {cardsList}
      
