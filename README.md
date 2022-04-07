@@ -18,7 +18,14 @@ based on what they choose to filter for. They can add or remove filters easily a
 ## My process
 
 ### Built with
-
+ - React
+ - SASS
+ - 
 ## What I learned
+    I learned about the .every method which helped in being able to filter the job postings 
+    based on what the user chooses. 
 
+    The .every method returns true if every variable in the array its appended to passes a test. 
+    In this case if every filterOption is in the Card.props.filterList it returns true, thus
+    adding the Card to the newCardList.
 ## Author
