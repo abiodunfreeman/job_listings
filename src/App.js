@@ -25,7 +25,7 @@ function App() {
   const [cardsList , setCardsList] = useState(cardsJSXArray)
  
   function handleFilter(ele, props){ //function that's passed down to <Cards/>
-    console.log(props)
+    
 
       setFilterOptions(prevOptions => [...new Set([...prevOptions, ele])]) // gets rids of duplicates, adds clicked element
     
@@ -36,7 +36,7 @@ function App() {
       return;
     } else if (filterOptions.length > 0){
       setCardsList(prevCardList => {
-        const newCardList = prevCardList.filter(card => {
+        const newCardList = cardsJSXArray.filter(card => {
           if (filterOptions.every(option => card.props.filterList.includes(option))) {
             // if the Card.props.filterList includes every option in filterOptions, returns the card
             return card;
@@ -46,17 +46,21 @@ function App() {
       });
     }
 
-    console.log(filterOptions)
+    
   }, [filterOptions])
 
   function handleClear(){
     setFilterOptions([])
   }
+  function handleDeleteOption(option){
+    console.log(option)
+    setFilterOptions(prevOptions => prevOptions.filter(value => value != option))
+  }
   return (
     <div className="App">
       <Header/>
       {/* filterOptions.length > 0 && */}
-      { <Filterlist handleClear={handleClear} list ={filterOptions}/>}
+      { <Filterlist handleDeleteOption={handleDeleteOption} handleClear={handleClear} list ={filterOptions}/>}
       <section className="card-list-container">
        {cardsList}
      

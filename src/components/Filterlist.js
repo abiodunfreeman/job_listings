@@ -1,10 +1,10 @@
 import React from 'react'
 import "./css/filterlist.css"
 export default function Filterlist( props ) {
-  const {list, handleClear} = props
+  const {list, handleClear, handleDeleteOption} = props
   const listJSX = list.map(option =>  <li className="option-item">
   <h3>{option}</h3>
-  <button type='button'>X</button>
+  <button onClick={() => handleDeleteOption(option)}type='button'>X</button>
 </li>)
 
 

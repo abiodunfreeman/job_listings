@@ -6,12 +6,12 @@
   font-family: 'Spartan', sans-serif;
 }
 
-/* line 7, ../github/job_listings/src/components/scss/App.scss */
+/* line 8, ../github/job_listings/src/components/scss/App.scss */
 html {
   font-size: 15px;
 }
 
-/* line 10, ../github/job_listings/src/components/scss/App.scss */
+/* line 11, ../github/job_listings/src/components/scss/App.scss */
 .App {
   max-width: 100%;
   min-height: 100vh;
@@ -19,14 +19,22 @@ html {
   background-color: #effafa;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
-/* line 18, ../github/job_listings/src/components/scss/App.scss */
+/* line 20, ../github/job_listings/src/components/scss/App.scss */
+.App #filter-list {
+  position: absolute;
+  top: 11.3vh;
+}
+
+/* line 24, ../github/job_listings/src/components/scss/App.scss */
 .App .card-list-container {
+  position: relative;
+  top: 50px;
   padding: 1rem;
   justify-self: center;
   align-self: center;
-  border: 3px solid rebeccapurple;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,15 +43,15 @@ html {
 }
 
 @media (max-width: 950px) {
-  /* line 33, ../github/job_listings/src/components/scss/App.scss */
+  /* line 41, ../github/job_listings/src/components/scss/App.scss */
   html {
     font-size: 14px;
   }
-  /* line 36, ../github/job_listings/src/components/scss/App.scss */
+  /* line 44, ../github/job_listings/src/components/scss/App.scss */
   p {
     font-size: 10px;
   }
-  /* line 41, ../github/job_listings/src/components/scss/App.scss */
+  /* line 49, ../github/job_listings/src/components/scss/App.scss */
   .App .card-list-container {
     margin-top: 2rem;
     gap: 5rem;
