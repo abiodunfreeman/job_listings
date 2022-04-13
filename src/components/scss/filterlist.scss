@@ -1,3 +1,34 @@
 #filter-list{
-  background-color: blueviolet;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 6px;
+  padding: 10px 20px;
+  width: 70vw;
+  // max-width: 50vw;
+  display:grid;
+  grid-template-columns: 1fr 50px;
+  gap: 1rem;
+  align-self: center;
+  ul{
+    border: 3px solid red;
+    display:flex;
+    gap: 1rem;
+    align-self: center;
+    flex-wrap:wrap;
+    li{
+      list-style: none;
+    }
+  }
+  h3{
+    border: 3px solid black;
+    align-self: center;
+    
+    color: hsl(180deg, 8%, 52%);
+    border-bottom:1px solid transparent ;
+  }
+  h3:hover{
+    color:hsl(180, 29%, 50%);
+    border-bottom: 1px solid hsl(180, 29%, 50%);
+    cursor:pointer;
+  }
 }

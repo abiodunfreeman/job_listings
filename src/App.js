@@ -8,7 +8,7 @@ import { useEffect, useState } from 'react';
 
 function App() {
  
-  const [filterOptions, setFilterOptions] = useState([])
+  const [filterOptions, setFilterOptions] = useState([]) // could explain this 
 
   const cardsJSXArray = data.map(listing => { // creates <Card/> elements, passing down info from each data obj
     const filterList = [listing.role, listing.level, ...listing.tools, ...listing.languages] // //takes all filter options from data and puts into one array 
@@ -55,7 +55,8 @@ function App() {
   return (
     <div className="App">
       <Header/>
-      {filterOptions.length > 0 && <Filterlist handleClear={handleClear} list ={filterOptions}/>}
+      {/* filterOptions.length > 0 && */}
+      { <Filterlist handleClear={handleClear} list ={filterOptions}/>}
       <section className="card-list-container">
        {cardsList}
      
