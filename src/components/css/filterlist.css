@@ -1,3 +1,4 @@
+/* line 1, ../github/job_listings/src/components/scss/filterlist.scss */
 #filter-list {
   background-color: white;
   border: 1px solid black;
@@ -9,25 +10,61 @@
   gap: 1rem;
   align-self: center;
 }
+
+/* line 13, ../github/job_listings/src/components/scss/filterlist.scss */
 #filter-list ul {
-  border: 3px solid red;
   display: flex;
   gap: 1rem;
   align-self: center;
   flex-wrap: wrap;
 }
+
+/* line 20, ../github/job_listings/src/components/scss/filterlist.scss */
 #filter-list ul li {
   list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  background-color: #effafa;
 }
-#filter-list h3 {
-  border: 3px solid black;
+
+/* line 28, ../github/job_listings/src/components/scss/filterlist.scss */
+#filter-list ul li h3 {
+  border-top-left-radius: 5px;
+  padding: 0 3px;
+  color: #5ba4a4;
+}
+
+/* line 35, ../github/job_listings/src/components/scss/filterlist.scss */
+#filter-list ul li button {
+  border: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  color: white;
+  background-color: #5ba4a4;
+  font-size: 1.1rem;
+  font-weight: 700;
+  padding: 5px;
+  transition-duration: 250ms;
+}
+
+/* line 48, ../github/job_listings/src/components/scss/filterlist.scss */
+#filter-list ul li button:hover {
+  cursor: pointer;
+  background-color: #2c3a3a;
+}
+
+/* line 54, ../github/job_listings/src/components/scss/filterlist.scss */
+#filter-list #clear-btn {
   align-self: center;
-  color: hsl(180deg, 8%, 52%);
+  color: #7b8e8e;
   border-bottom: 1px solid transparent;
 }
-#filter-list h3:hover {
-  color: hsl(180deg, 29%, 50%);
-  border-bottom: 1px solid hsl(180deg, 29%, 50%);
+
+/* line 61, ../github/job_listings/src/components/scss/filterlist.scss */
+#filter-list #clear-btn:hover {
+  color: #5ba4a4;
+  border-bottom: 1px solid #5ba4a4;
   cursor: pointer;
 }
 
